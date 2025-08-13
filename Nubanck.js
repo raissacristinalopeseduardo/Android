@@ -5,7 +5,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container1}>
-        <View style={styles.perfil}><MaterialIcons name="person" size={35} color="white"  /></View>
+        <View style={styles.perfil}><MaterialIcons name="person" size={30} color="white"  /></View>
         <View style={styles.is}>
         <View style={styles.i}> <MaterialIcons name="visibility" size={20} color="white"  /></View>
         <View style={styles.i}><MaterialIcons name="help" size={20} color="white"  /></View>
@@ -13,7 +13,7 @@ export default function App() {
         </View>
         
 
-        <Text style={styles.olagui}>Olá, Raissa</Text>
+        <Text style={styles.ola}>Olá, Raissa</Text>
       </View>
 
       <View style={styles.container2}>
@@ -47,8 +47,8 @@ export default function App() {
       </View>
 
       <View style={styles.cont}>
-        <View style={styles.bola}></View>
-        <Text style={styles.textConfigs}>Depositar</Text>
+        <View style={styles.bola}><MaterialIcons name="receipt-long" size={30} color="black" /></View>
+        <Text style={styles.textConfigs}>Extrato</Text>
         
       </View>
       
@@ -83,11 +83,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     padding: 0,
   },
 
-  olagui: {
+  ola: {
     fontSize: 20,
     position: 'absolute',
     bottom: 20,
@@ -102,11 +102,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#8d25d1',
     top: 0,
     padding:20,
+    paddingTop:30,
   },
 
   container2: {
     width: 'auto',
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     height: 110,
     paddingLeft:20,
     paddingTop:20,
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
   },
 
   t2:{
-    color:'black',
+    color:'white',
     fontSize:20,
     marginBottom:10,
     fontWeight:600,
@@ -203,6 +204,7 @@ const styles = StyleSheet.create({
 
   container5:{
     padding:20,
+    
   },
 
   card3:{
@@ -210,6 +212,7 @@ const styles = StyleSheet.create({
     width:20,
     borderWidth:2,
     borderRadius:5,
+    color:'white',
 
   },
 
@@ -218,30 +221,34 @@ const styles = StyleSheet.create({
     fontSize:17,
     marginBottom:20,
     fontWeight:500,
+    color:'white',
   },
 
   fmensal:{
     fontWeight:500,
     opacity:0.7,
     marginBottom:6,
+    color:'white',
   },
 
   valorfatura:{
     fontSize:18,
     fontWeight:600,
     marginBottom:8,
+    color:'white',
   },
 
   ldisponivel:{
     opacity:0.8,
     fontWeight:500,
+    color:'white',
   },
 
   perfil:{
     marginTop:10,
     backgroundColor:"rgba(255,255,255,0.5)",
-    height:50,
-    width:50,
+    height:45,
+    width:45,
     borderRadius:30,
     opacity:1,
     alignItems:'center',
@@ -269,9 +276,10 @@ const styles = StyleSheet.create({
     opacity:1,
     justifyContent:'center',
     alignItems:'center',
-  }
-
+  },
 
 
 
 });
+
+
